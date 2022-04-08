@@ -1,5 +1,7 @@
 "use strict";
 
+const MAPNIK_REFERENCE_VERSION = "3.0.22"
+
 var fs = require("fs"),
     path = require("path"),
     url = require("url"),
@@ -9,7 +11,7 @@ var _ = require("underscore"),
     Bridge = require("@kartotherian/tilelive-bridge"),
     carto = require("carto"),
     mapnik = require("@kartotherian/mapnik"),
-    mapnikref = require('mapnik-reference').load(mapnik.versions.mapnik),
+    mapnikref = require('mapnik-reference').load(MAPNIK_REFERENCE_VERSION),
     yaml = require("js-yaml");
 
 var tm = {};
